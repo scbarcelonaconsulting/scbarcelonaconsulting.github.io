@@ -84,14 +84,14 @@ a { text-decoration: none; }
 	}
 
 #header h1 {
+	display:inline-block;
 	font-size: 5em;
+	width: 4em;
 	margin-bottom: .3em;
-	
 	}
-#header h1 span {
-	display: block;
-	}
+
 #header h4 {
+	display: block;
 	font-size: 1.2em;
 	}
 
@@ -111,9 +111,12 @@ a { text-decoration: none; }
 	transition-duration: .6s;
 	}
 #menu:before {
-	content: 'Menu';
 	font-size: 5em;
 	}
+html[lang|=en] #menu:before { content: 'Menu'; }
+html[lang|=es] #menu:before,
+html[lang|=ca] #menu:before { content: 'Menú'; }
+
 #menu li {
 	opacity: 0;
 	margin-top: 1.5em;
@@ -129,7 +132,11 @@ a { text-decoration: none; }
 	text-decoration: none;
 	transition: color ease-in-out .5s;
 	}
-
+/*#menu:after {
+	}
+html[lang|=en] #menu:after { content: 'choose another language'; }
+html[lang|=es] #menu:after { content: 'selecciona otro idioma'; }
+html[lang|=ca] #menu:after { content: 'selecciona un altre idioma'; }*/
 
 /* menu abierto de móbil */
 
@@ -145,10 +152,21 @@ a { text-decoration: none; }
 	transition-property: margin-left;
 	transition-timing-function: cubic-bezier(.25,.01,.07,.9);
 	}
-#menu.opened ul:nth-child(1) li:nth-child(1) { transition-delay: .1s; transition-duration: .5s; }
-#menu.opened ul:nth-child(1) li:nth-child(2) { transition-delay: .2s; transition-duration: .6s; }
-#menu.opened ul:nth-child(2) li:nth-child(1) { transition-delay: .3s; transition-duration: .7s; }
-#menu.opened ul:nth-child(2) li:nth-child(2) { transition-delay: .4s; transition-duration: .8s; }
+#menu.opened li:nth-child(1) { transition-delay: .1s; transition-duration: .5s; }
+#menu.opened li:nth-child(2) { transition-delay: .2s; transition-duration: .6s; }
+#menu.opened li:nth-child(3) { transition-delay: .3s; transition-duration: .7s; }
+#menu.opened li:nth-child(4) { transition-delay: .4s; transition-duration: .8s; }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -223,15 +241,14 @@ a { text-decoration: none; }
 
 /* específico de la página de contacto */
 
-#contact ul li span {
-	display: inline;
+
+#contact ul li {
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	}
-#contact ul li span:first-child {
+#contact ul li span {
 	display: block;
 	}
-
 #contact p.button {
 	margin-top: 2em;
 	}
@@ -245,7 +262,8 @@ a { text-decoration: none; }
 	transition-timing-function: ease-in-out;
 	transition-duration: .2s;
 	}
-#contact .button a:hover, #contact .button a:active {
+#contact .button a:hover,
+#contact .button a:active {
 	background-color: #D6D6D6;
 	color: #666666;
 	}
@@ -259,7 +277,11 @@ a { text-decoration: none; }
 
 
 
-
+#language {
+	position: fixed;
+	top:0;
+	right: 0;
+	}
 
 
 
@@ -299,40 +321,34 @@ a { text-decoration: none; }
 
 #header h1 {
 	font-size: 3.5em;
+	width: 6em;
 	margin-bottom: .3em;
 	}
-#header h1 span {
-	display: inline;
-	}
-#header h1 span:nth-child(3) {
-	display: block;
-	}
-
 #header h4 {
 	font-size: 1em;
 	margin-bottom: 1em;
 	}
 
 #menu {
+	display: inline-block;
 	left: auto;
 	position: relative;
+	width: 20em;
 	opacity: 1;
-	margin: 1em 0;
+	margin-bottom: 1em;
 	padding: 0;
 	}
 #menu:before {
 	display: none;
 	}
-#menu > ul {
-	display: block;
-	}
 #menu li {
-	transition: none;
-	opacity: 1;
+	display: inline-block;
 	margin-top: 0;
 	margin-bottom: 0;
 	margin-left: 0;
-	display: inline-block;
+
+	transition: none;
+	opacity: 1;
 	}
 #menu li a {
 	display: inline-block;
@@ -340,6 +356,17 @@ a { text-decoration: none; }
 	font-size: 1.2em;
 	padding: .4em 1em;
 	}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* main */
@@ -356,10 +383,9 @@ a { text-decoration: none; }
 
 /* específico de contact */
 
-#contact ul li span:first-child {
+#contact ul li span {
 	display: inline;
 	}
-
 #contact .button a {
 	display: inline;
 	width: auto;
@@ -406,24 +432,19 @@ a { text-decoration: none; }
 	}
 
 #header h1 {
+	width: auto;
 	font-size: 4em;
 	}
-#header h1 span:nth-child(3) {
-	display: inline; 
-	}
-
 #header h4 {
 	font-size: 1.5em;
 	margin-bottom: 1em;
 	}
 
-#header > ul {
+#menu {
 	margin: 0;
+	width: auto;
 	}
-#header > ul > ul {
-	display: inline-block;
-	}
-#header ul li a {
+#menu li a {
 	font-size: 1.3em;
 	padding: 1em 1em;
 	}
@@ -498,7 +519,8 @@ a { text-decoration: none; }
 	font-size: 2em;
 	margin-bottom: 1em;
 	}
-#header ul li a {
+	
+#menu li a {
 	padding: 1em 2em;
 	}
 
