@@ -81,15 +81,15 @@ a { text-decoration: none; }
 #header {
 	z-index: 10;
 	width: 100%;
-	padding: 2em;
+	padding: 2em 1em;
 	overflow: hidden;
 	}
 
 #header h1 {
 	display:inline-block;
-	font-size: 5em;
+	font-size: 4em;
 	width: 4em;
-	margin-bottom: .3em;
+	margin-bottom: .5em;
 	}
 
 #header h4 {
