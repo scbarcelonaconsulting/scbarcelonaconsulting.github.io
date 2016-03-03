@@ -15,6 +15,6 @@ $(window).scroll(function() {
 $(function() {
 	$("#openmenu").click(function() {
 		$("#menu").toggleClass("opened");
-		$("#openmenu").toggleClass("close");
+		$(this).toggleClass("close");
 	});
 });

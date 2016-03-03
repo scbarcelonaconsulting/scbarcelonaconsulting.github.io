@@ -63,18 +63,46 @@ a { text-decoration: none; }
 
 #openmenu {
 	z-index: 20;
-	display: block;
 	position: fixed;
-	top: 0.5em;
-	right: 0.5em;
+	top: .5em;
+	right: .5em;
 	width: 3em;
-	height: 3em;
+	height: 2.3em;
+	cursor: pointer;
+	transition: all 0.3s;
+	}
+#openmenu div,
+#openmenu:before,
+#openmenu:after {
+	height: .5em;
+	background: white;
+	transition: all 0.3s;
+	backface-visibility: hidden;
+	}
+#openmenu div {
+	width: 100%;
+	margin: .4em auto;
+	}
+#openmenu:before,
+#openmenu:after {
+	content: "";
+	display: block;
+	}
 
-	background-color: green;
-	}
+
 #openmenu.close {
-	background-color: blue;
+	right: .0em;
 	}
+#openmenu.close:after {
+	transform: rotate(-45deg) translate(.7em, -.8em);
+	}
+#openmenu.close:before {
+	transform: rotate(45deg) translate(.5em, .5em);
+	}
+#openmenu.close div {
+	opacity: 0;
+	}
+
 
 /* header */
 
@@ -229,12 +257,12 @@ html[lang|=ca] #menu:after { content: 'selecciona un altre idioma'; }*/
 	margin-bottom: 1em;
 	}
 #main p {
-	font-size: 1.3em;
+	font-size: 1.2em;
 	line-height: 1.3em;
 	margin-bottom: 1.2em;
 	}
 #main ul {
-	font-size: 1.3em;
+	font-size: 1.2em;
 	line-height: 1.3em;
 	margin-bottom: 1.2em;
 	}
@@ -396,7 +424,12 @@ html[lang|=ca] #menu:after { content: 'selecciona un altre idioma'; }*/
 	}
 
 
-
+#main p {
+	font-size: 1.3em;
+	}
+#main ul {
+	font-size: 1.3em;
+	}
 
 
 
