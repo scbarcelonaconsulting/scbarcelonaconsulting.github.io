@@ -200,12 +200,13 @@ html[lang|=ca] #menu:after { content: 'selecciona un altre idioma'; }*/
 
 #main {
 	width: 100%;
+	overflow: hidden;
 	}
 #main > div {
 	display: inline-block;
 	width: 100%;
-	padding-left: 2em;
-	padding-right: 2em;
+	padding-left: 1em;
+	padding-right: 1em;
 	}
 #main > div:nth-child(1) {
 	padding-top: 3em;
@@ -220,7 +221,7 @@ html[lang|=ca] #menu:after { content: 'selecciona un altre idioma'; }*/
 
 
 #main h2 {
-	font-size: 3.5em;
+	font-size: 3em;
 	margin-bottom: 1em;
 	}
 #main h3 {
