@@ -102,9 +102,10 @@ body * { box-sizing: border-box; }
 
 a { text-decoration: none; }
 
-/* boton menu ara móbil */
+/* boton menu para móbil */
 
 #openmenu {
+	font-size: .8em; /*para ajustar el tamaño general del botón*/
 	z-index: 20;
 	position: fixed;
 	top: .5em;
@@ -185,7 +186,7 @@ a { text-decoration: none; }
 	transition-duration: .6s;
 	}
 #menu:before {
-	font-size: 5em;
+	font-size: 3em;
 	}
 html[lang|=en] #menu:before { content: 'Menu'; }
 html[lang|=es] #menu:before,
@@ -202,7 +203,7 @@ html[lang|=ca] #menu:before { content: 'Menú'; }
 #menu li a {
 	display: block;
 	width: 6em;
-	font-size: 3em;
+	font-size: 2em;
 	text-decoration: none;
 	transition: color ease-in-out .5s;
 	}
