@@ -135,7 +135,7 @@ a { text-decoration: none; }
 
 
 #openmenu.close {
-	right: .0em;
+	right: .5em;
 	}
 #openmenu.close:after {
 	transform: rotate(-45deg) translate(.7em, -.8em);
@@ -345,8 +345,24 @@ html[lang|=ca] #menu:after { content: 'selecciona un altre idioma'; }*/
 
 
 
+/* específico de services */
 
-/* específico de la página de contacto */
+#methodology > div > div {
+	width: 100%;
+	margin-top: 6em;
+	}
+#methodology > div > div > img {
+	width: 100%;
+	margin-bottom: 1em;
+	}
+#methodology h5 {
+
+	}
+
+
+
+
+/* específico de contacto */
 
 
 #contact > ul > li {
@@ -492,6 +508,28 @@ html[lang|=ca] #menu:after { content: 'selecciona un altre idioma'; }*/
 
 #footer > ul > li {
 	display: inline-block;
+	}
+
+
+
+
+
+
+
+
+/* específico de services */
+
+#main #methodology > div {
+	max-width: 52em;
+	}
+
+#methodology > div > div {
+	display: inline-block;
+	width: 47%;
+	vertical-align: top;
+	}
+#methodology > div > div:nth-child(even) {
+	margin-left: 5%
 	}
 
 
