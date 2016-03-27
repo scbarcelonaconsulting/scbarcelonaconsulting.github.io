@@ -5,9 +5,9 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /* tipografias */
 
-body { font-family: 'open_sanslight'; }
-#contact ul li span:first-child { font-family: 'open_sanssemibold'; }
-h1, h2, h3, h4, #header ul:before { font-family: 'fenix_stdregular'; }
+h1, h2, h3, h4, #header ul:before   { font-family: 'fenix_stdregular'; }
+body                                { font-family: 'open_sanslight'; }
+h5, #contact ul li span:first-child { font-family: 'open_sanssemibold'; }
 
 
 /* colores */
@@ -353,10 +353,11 @@ html[lang|=ca] #menu:after { content: 'selecciona un altre idioma'; }*/
 	}
 #methodology > div > div > img {
 	width: 100%;
-	margin-bottom: 1em;
+	margin-bottom: 3em;
 	}
 #methodology h5 {
-
+	font-size: 1.3em;
+	margin-bottom: 1.5em;
 	}
 
 
@@ -529,9 +530,12 @@ html[lang|=ca] #menu:after { content: 'selecciona un altre idioma'; }*/
 	vertical-align: top;
 	}
 #methodology > div > div:nth-child(even) {
-	margin-left: 5%
+	margin-left: 4.5%
 	}
 
+#methodology > div > div > p {
+	font-size: 1.1em
+	}
 
 
 
