@@ -35,34 +35,46 @@ h5, #contact ul li span:first-child { font-family: 'open_sanssemibold'; }
 	}
 
 
+
+
+
+
+
 /* home > rojos */
 #header ul li:nth-child(1).current a,
-#header ul li:nth-child(1) a:hover { color: #FFA785; }
+#header ul li:nth-child(1) a:hover { color: #FF9D00; }
 
-         #intro { background-color: #C22D00; color: #FFA785; }
-       #intro a {                            color: #FFA785; }
-  #colaboration { background-color: #FFA785; color: #C22D00; }
-#colaboration a {                            color: #C22D00; }
+         #intro { background-color: #BF7600; color: #ffebcc; }
+       #intro a {                            color: #ffebcc; }
+  #colaboration { background-color: #FF9D00; color: #663f00; }
+#colaboration a {                            color: #663f00; }
 
 
 /* services > azules */
 #header ul li:nth-child(2).current a,
 #header ul li:nth-child(2) a:hover { color: #A1A4D4; }
 
-          #cost { background-color: #4A4B87; color: #A1A4D4; }
-        #cost a {                            color: #A1A4D4; }
-   #methodology { background-color: #A1A4D4; color: #4A4B87; }
- #methodology a {                            color: #4A4B87; }
+          #cost { background-color: #4A4B87; color: #dedeed; }
+        #cost a {                            color: #dedeed; }
+   #methodology { background-color: #A1A4D4; color: #363763; }
+ #methodology a {                            color: #363763; }
 
 
 /* team > verdes */
 #header ul li:nth-child(3).current a,
-#header ul li:nth-child(3) a:hover { color: #87B085; }
+#header ul li:nth-child(3) a:hover { color: #6bae6f; }
 
-          #team { background-color: #38663A; color: #87B085; }
-        #team a {                            color: #87B085; }
-   #improvement { background-color: #87B085; color: #38663A; }
- #improvement a {                            color: #38663A; }
+          #experience { background-color: #38663A; color: #deeddf; }
+        #experience a {                            color: #deeddf; }
+   #improvement { background-color: #6bae6f; color: #244226; }
+ #improvement a {                            color: #244226; }
+
+
+
+
+
+
+
 
 
 /* contact > grises */
@@ -133,7 +145,6 @@ a { text-decoration: none; }
 	display: block;
 	}
 
-
 #openmenu.close {
 	right: .5em;
 	}
@@ -146,6 +157,12 @@ a { text-decoration: none; }
 #openmenu.close div {
 	opacity: 0;
 	}
+
+
+
+
+
+
 
 
 /* header */
@@ -209,11 +226,6 @@ html[lang|=ca] #menu:before { content: 'Menú'; }
 	}
 
 
-
-
-
-
-
 /*#menu:after {
 	}
 html[lang|=en] #menu:after { content: 'choose another language'; }
@@ -227,13 +239,6 @@ html[lang|=ca] #menu:after { content: 'selecciona un altre idioma'; }*/
 	top:0;
 	right: 0;
 	}*/
-
-
-
-
-
-
-
 
 
 #menu.opened {
@@ -252,14 +257,6 @@ html[lang|=ca] #menu:after { content: 'selecciona un altre idioma'; }*/
 #menu.opened li:nth-child(2) { transition-delay: .2s; transition-duration: .6s; }
 #menu.opened li:nth-child(3) { transition-delay: .3s; transition-duration: .7s; }
 #menu.opened li:nth-child(4) { transition-delay: .4s; transition-duration: .8s; }
-
-
-
-
-
-
-
-
 
 
 
@@ -325,13 +322,18 @@ html[lang|=ca] #menu:after { content: 'selecciona un altre idioma'; }*/
 #footer {
 	padding-top: 2em;
 	padding-right: 1em;
-	padding-bottom: 2em;
+	padding-bottom: .5 em;
 	padding-left: 1em;
 	text-align: center;
 	}
 #footer > ul > li {
 	display: block;
 	margin-bottom: 1em;	
+	}
+#footer > ul > li:last-child {
+	display: inline-block;
+	margin-top: 3em;
+	margin-bottom: 0;
 	}
 #footer > ul > li > a {
 	display: block;
@@ -345,20 +347,60 @@ html[lang|=ca] #menu:after { content: 'selecciona un altre idioma'; }*/
 
 
 
+/* específico de home */
+
+#colaboration > div {
+	margin-bottom: 4em;
+	}
+#colaboration > div > div {
+	margin-top: 4em;
+	text-align: center;
+	}
+	
+#colaboration > div > div > img {
+	display: block;
+	width: 60%;
+	margin: 0 auto;
+	}
+#colaboration > div > div > h5 {
+	display: block;
+	font-size: 1.3em;
+	margin-top: 2em;
+	margin-bottom: 1.5em;
+	}
+#colaboration > div > div > p {
+	text-align: left;
+	}
+
+
+
+
+
+
+
+
 /* específico de services */
 
 #methodology > div > div {
 	width: 100%;
 	margin-top: 6em;
+	text-align: center;
 	}
 #methodology > div > div > img {
 	width: 100%;
-	margin-bottom: 3em;
+	margin-bottom: 1em;
 	}
 #methodology h5 {
 	font-size: 1.3em;
 	margin-bottom: 1.5em;
 	}
+#methodology > div > div > p {
+	text-align: left;
+	}
+
+
+
+
 
 
 
@@ -417,6 +459,11 @@ html[lang|=ca] #menu:after { content: 'selecciona un altre idioma'; }*/
 #openmenu {
 	display: none;
 	}
+
+
+
+
+
 
 /* header */
 
@@ -507,12 +554,58 @@ html[lang|=ca] #menu:after { content: 'selecciona un altre idioma'; }*/
 
 /* footer */
 
+#footer {
+	padding-bottom: 1em;
+	}
 #footer > ul > li {
 	display: inline-block;
+	margin-bottom: 0;
+	}
+#footer > ul > li:last-child {
+	display: block;
+	margin-top: 5em;
+	}
+#footer > ul > li:last-child > a {
+	display: inline;
 	}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* específico de home */
+
+
+#main #colaboration > div {
+	max-width: 52em;
+	}
+#colaboration > div > div {
+	display: inline-block;
+	width: 28%;
+	vertical-align: top;
+	}
+#colaboration > div > div:nth-child(2),
+#colaboration > div > div:nth-child(3) {
+	margin-left: 4.5%
+	}
+
+#colaboration > div > div > img {
+	width: 80%;
+	}
+#colaboration > div > div > p {
+	font-size: 1.1em
+	}
 
 
 
@@ -536,6 +629,8 @@ html[lang|=ca] #menu:after { content: 'selecciona un altre idioma'; }*/
 #methodology > div > div > p {
 	font-size: 1.1em
 	}
+
+
 
 
 
@@ -703,13 +798,18 @@ html[lang|=ca] #menu:after { content: 'selecciona un altre idioma'; }*/
 
 
 
+/* específico de home */
+
+#colaboration > div > div > p {
+	font-size: 1.3em
+	}
 
 
+/* específico de services */
 
-
-
-
-
+#methodology > div > div > p {
+	font-size: 1.3em
+	}
 
 
 
