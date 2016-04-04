@@ -299,12 +299,12 @@ html[lang|=ca] #menu:after { content: 'selecciona un altre idioma'; }*/
 	margin-bottom: 1em;
 	}
 #main p {
-	font-size: 1.2em;
+	font-size: 1em;
 	line-height: 1.3em;
 	margin-bottom: 1.2em;
 	}
 #main ul {
-	font-size: 1.2em;
+	font-size: 1em;
 	line-height: 1.3em;
 	margin-bottom: 1.2em;
 	}
