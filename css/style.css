@@ -23,10 +23,10 @@ h5, #contact ul li span:first-child { font-family: 'open_sanssemibold'; }
 #header ul li:nth-child(1).current a,
 #header ul li:nth-child(1) a:hover { color: #FF9D00; }
 
-         #intro { background-color: #A85700; color: #ffebcc; }
-       #intro a {                            color: #ffebcc; }
-  #colaboration { background-color: #FFC021; color: #663f00; }
-#colaboration a {                            color: #663f00; }
+         #intro { background-color: #A85700; color: #ffe6cc; }
+       #intro a {                            color: #ffe6cc; }
+  #colaboration { background-color: #FFB730; color: #4d3200; }
+#colaboration a {                            color: #4d3200; }
 
 
 /* services > azules */
