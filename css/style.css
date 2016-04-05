@@ -21,12 +21,13 @@ h5, #contact ul li span:first-child { font-family: 'open_sanssemibold'; }
 	border: 2px solid #D6D6D6;
 	}
 .button:hover, .button:active { background-color: #D6D6D6; }
-.button:hover a,
-.button:active a,
-#contact .button:hover a,
+          .button:hover a,
+         .button:active a,
+ #contact .button:hover a,
 #contact .button:active a,
-#footer .button:hover a,
-#footer .button:active a { color: #666666; }
+  #footer .button:hover a,
+ #footer .button:active a { color: #666666; }
+
 
 .button, .button * {
 	transition-property: color, background-color;
@@ -35,7 +36,12 @@ h5, #contact ul li span:first-child { font-family: 'open_sanssemibold'; }
 	}
 
 
-
+.button::selection,
+#openmenu::selection,
+#menu::selection
+ {
+	background:red !important;
+	}
 
 
 
