@@ -12,7 +12,6 @@ h5, #contact ul li span:first-child { font-family: 'open_sanssemibold'; }
 
 /* colores */
 
-body * { -webkit-tap-highlight-color:rgba(0,0,0,0); }
 
 /* header y footer */
 #header, #header ul, #footer { background-color: #292929; color: #eee; }
@@ -24,9 +23,9 @@ body * { -webkit-tap-highlight-color:rgba(0,0,0,0); }
 #header ul li:nth-child(1).current a,
 #header ul li:nth-child(1) a:hover { color: #FF9D00; }
 
-         #intro { background-color: #BF7600; color: #ffebcc; }
+         #intro { background-color: #A86800; color: #ffebcc; }
        #intro a {                            color: #ffebcc; }
-  #colaboration { background-color: #FF9D00; color: #663f00; }
+  #colaboration { background-color: #FFC821; color: #663f00; }
 #colaboration a {                            color: #663f00; }
 
 
@@ -275,6 +274,15 @@ html[lang|=ca] #menu:after { content: 'selecciona un altre idioma'; }*/
 	}
 
 
+#main > div > img {
+	display: block;
+	width: 90%;
+	max-width: 30em;
+	margin-top: 2em;
+	margin-bottom: 3em;
+	margin-left: auto;
+	margin-right: auto;
+	}
 #main h2 {
 	font-size: 3em;
 	margin-bottom: 1em;
