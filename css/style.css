@@ -5,8 +5,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /* tipografias */
 
-h1, h2, h3, h4, #header ul:before   { font-family: 'fenix_stdregular'; }
-body                                { font-family: 'open_sanslight'; }
+h1, h2, h3, h4, #header ul:before   { font-family: 'fenix_stdregular';  }
+body                                { font-family: 'open_sanslight';    }
 h5, #contact ul li span:first-child { font-family: 'open_sanssemibold'; }
 
 
@@ -16,28 +16,6 @@ h5, #contact ul li span:first-child { font-family: 'open_sanssemibold'; }
 #header h4 { color: #bbb; }
 #header a, #footer a { color: #ddd; }
 
-
-.button {
-	border: 2px solid #D6D6D6;
-	}
-.button:hover, .button:active { background-color: #D6D6D6; }
-          .button:hover a,
-         .button:active a,
- #contact .button:hover a,
-#contact .button:active a,
-  #footer .button:hover a,
- #footer .button:active a { color: #666666; }
-
-
-.button, .button * {
-	transition-property: color, background-color;
-	transition-timing-function: ease-in-out;
-	transition-duration: .2s;
-	}
-
-* {
--webkit-tap-highlight-color:red;
-}
 
 /* home > rojos */
 #header ul li:nth-child(1).current a,
@@ -63,17 +41,10 @@ h5, #contact ul li span:first-child { font-family: 'open_sanssemibold'; }
 #header ul li:nth-child(3).current a,
 #header ul li:nth-child(3) a:hover { color: #98AE6B; }
 
-          #experience { background-color: #38663A; color: #deeddf; }
-        #experience a {                            color: #deeddf; }
+    #experience { background-color: #38663A; color: #deeddf; }
+  #experience a {                            color: #deeddf; }
    #improvement { background-color: #98AE6B; color: #384224; }
  #improvement a {                            color: #384224; }
-
-
-
-
-
-
-
 
 
 /* contact > grises */
@@ -84,8 +55,20 @@ h5, #contact ul li span:first-child { font-family: 'open_sanssemibold'; }
      #contact a {                            color: #D6D6D6; }
 
 
-
-
+/*aspecto de los botones*/
+.button { border: 2px solid #D6D6D6; }
+.button:hover, .button:active { background-color: #D6D6D6; }
+          .button:hover a,
+         .button:active a,
+ #contact .button:hover a,
+#contact .button:active a,
+  #footer .button:hover a,
+ #footer .button:active a { color: #666666; }
+.button, .button * {
+	transition-property: color, background-color;
+	transition-timing-function: ease-in-out;
+	transition-duration: .2s;
+	}
 
 
 
