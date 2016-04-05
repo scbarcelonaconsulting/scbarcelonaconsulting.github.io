@@ -12,6 +12,9 @@ h5, #contact ul li span:first-child { font-family: 'open_sanssemibold'; }
 
 /* colores */
 
+body * { -webkit-tap-highlight-color:none; }
+
+/* header y footer */
 #header, #header ul, #footer { background-color: #292929; color: #eee; }
 #header h4 { color: #bbb; }
 #header a, #footer a { color: #ddd; }
@@ -55,7 +58,7 @@ h5, #contact ul li span:first-child { font-family: 'open_sanssemibold'; }
      #contact a {                            color: #D6D6D6; }
 
 
-/*aspecto de los botones*/
+/* aspecto de los botones */
 .button { border: 2px solid #D6D6D6; }
 .button:hover, .button:active { background-color: #D6D6D6; }
           .button:hover a,
