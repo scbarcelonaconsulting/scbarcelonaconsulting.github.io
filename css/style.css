@@ -62,12 +62,12 @@ h5, #contact ul li span:first-child { font-family: 'open_sanssemibold'; }
 
 /* team > verdes */
 #header ul li:nth-child(3).current a,
-#header ul li:nth-child(3) a:hover { color: #6bae6f; }
+#header ul li:nth-child(3) a:hover { color: #98AE6B; }
 
           #experience { background-color: #38663A; color: #deeddf; }
         #experience a {                            color: #deeddf; }
-   #improvement { background-color: #98AE6B; color: #244226; }
- #improvement a {                            color: #244226; }
+   #improvement { background-color: #98AE6B; color: #384224; }
+ #improvement a {                            color: #384224; }
 
 
 
