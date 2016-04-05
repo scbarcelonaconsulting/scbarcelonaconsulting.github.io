@@ -35,16 +35,9 @@ h5, #contact ul li span:first-child { font-family: 'open_sanssemibold'; }
 	transition-duration: .2s;
 	}
 
-
-.button::selection,
-#openmenu::selection,
-#menu::selection
- {
-	background:red !important;
-	}
-
-
-
+* {
+-webkit-tap-highlight-color:red;
+}
 
 /* home > rojos */
 #header ul li:nth-child(1).current a,
