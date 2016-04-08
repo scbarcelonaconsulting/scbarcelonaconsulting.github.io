@@ -21,17 +21,13 @@ h5, #contact ul li span:first-child { font-family: 'open_sanssemibold'; }
 
 /* home > rojos */
 #header ul li:nth-child(1).current a,
-#header ul li:nth-child(1) a:hover { color: #FF9D00; }
+#header ul li:nth-child(1) a:hover { color: #E3AE27; }
 
- /*        #intro { background-color: #BF7600; color: #ffebcc; }
-       #intro a {                            color: #ffebcc; }
-  #colaboration { background-color: #FF9D00; color: #663f00; }
-#colaboration a {                            color: #663f00; }*/
+         #intro { background-color: #DB810D; color: #fef4e7; }
+       #intro a {                            color: #fef4e7; }
+  #colaboration { background-color: #E3AE27; color: #784707; }
+#colaboration a {                            color: #784707; }
 
-         #intro { background-color: rgb(191, 118, 0); color: rgb(255, 235, 204); }
-       #intro a {                            color: rgb(255, 235, 204); }
-  #colaboration { background-color: rgb(255, 157, 0); color: rgb(102, 63, 0); }
-#colaboration a {                            color: rgb(102, 63, 0) }
 
 /* services > azules */
 #header ul li:nth-child(2).current a,
@@ -278,12 +274,10 @@ html[lang|=ca] #menu:after { content: 'selecciona un altre idioma'; }*/
 	}
 
 
-#main > div > img {
+#main img {
 	display: block;
-	width: 90%;
-	max-width: 30em;
-	margin-top: 2em;
-	margin-bottom: 3em;
+	margin-top: 4em;
+	margin-bottom: 6em;
 	margin-left: auto;
 	margin-right: auto;
 	}
@@ -292,7 +286,8 @@ html[lang|=ca] #menu:after { content: 'selecciona un altre idioma'; }*/
 	margin-bottom: 1em;
 	}
 #main h3 {
-	font-size: 2.5em;
+	font-size: 2em;
+	margin-top: 1em;
 	margin-bottom: 1em;
 	}
 #main p {
@@ -305,8 +300,16 @@ html[lang|=ca] #menu:after { content: 'selecciona un altre idioma'; }*/
 	line-height: 1.3em;
 	margin-bottom: 1.2em;
 	}
-
-
+#main > div > ul li {
+	margin-bottom: .7em;
+	}
+#main > div > ul li:before {
+	content: '-';
+	margin-right: .3em;
+	}
+/*anular propiedades para contact*/
+#main > #contact > ul li { margin-bottom: 0; }
+#main > #contact > ul li:before { display: none; }
 
 
 
@@ -319,7 +322,7 @@ html[lang|=ca] #menu:after { content: 'selecciona un altre idioma'; }*/
 #footer {
 	padding-top: 2em;
 	padding-right: 1em;
-	padding-bottom: .5 em;
+	padding-bottom: .5em;
 	padding-left: 1em;
 	text-align: center;
 	}
@@ -345,6 +348,11 @@ html[lang|=ca] #menu:after { content: 'selecciona un altre idioma'; }*/
 
 
 /* específico de home */
+
+#intro > img {
+	width: 100%;
+	max-width: 30em;
+	}
 
 #colaboration > div {
 	margin-bottom: 4em;
@@ -397,7 +405,12 @@ html[lang|=ca] #menu:after { content: 'selecciona un altre idioma'; }*/
 
 
 
+/* específico de experiencia */
 
+#main > #improvement > img {
+	width: 90%;
+	max-width: 30em;
+	}
 
 
 
@@ -620,11 +633,11 @@ html[lang|=ca] #menu:after { content: 'selecciona un altre idioma'; }*/
 	vertical-align: top;
 	}
 #methodology > div > div:nth-child(even) {
-	margin-left: 4.5%
+	margin-left: 4.5%;
 	}
 
 #methodology > div > div > p {
-	font-size: 1.1em
+	font-size: 1.1em;
 	}
 
 
@@ -713,18 +726,21 @@ html[lang|=ca] #menu:after { content: 'selecciona un altre idioma'; }*/
 	padding-top: 4.3em;
 	}
 
-#main > div > * {
-	max-width: 40em;
+#main > div * {
 	margin-left: auto;
 	margin-right: auto;
 	}
+#main > div h2 { max-width: 17.3em; }
+#main > div h3 { max-width: 25.9em; }
 
-#main > div > h2 {
-	max-width: 17.2em;
+#main > div img,
+#main > div p,
+#main > div ul,
+#main > div div {
+	max-width: 40em;
 	}
-#main > div > h3 {
-	max-width: 20.7em;
-	}
+
+
 
 
 
