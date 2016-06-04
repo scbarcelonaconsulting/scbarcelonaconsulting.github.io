@@ -14,10 +14,11 @@ h5, #contact ul li span:first-child { font-family: 'open_sanssemibold'; }
 
 
 /* header y footer */
-#header, #header ul, #footer { background-color: #292929; color: #eee; }
-#header h4 { color: #bbb; }
-#header a, #footer a { color: #ddd; }
-
+.selectlanguage,
+        #header,
+        #header ul { background-color: #292929; color: #eee; }
+        #header h4 {                            color: #bbb; }
+        #header a  {                            color: #ddd; }
 
 /* home > rojos */
 #header ul li:nth-child(1).current a,
@@ -460,14 +461,14 @@ html[lang|=ca] #menu:after { content: 'selecciona un altre idioma'; }*/
 
 /* específico de index y lenguaje*/
 
-#header.selectlanguage {
-	height: 100%;
+
+.selectlanguage #header {
 	padding-top: 5em;
 	}
-#header.selectlanguage ul {
+.selectlanguage #header ul {
 	margin-top: 2em;
 	}
-#header.selectlanguage ul li {
+.selectlanguage #header ul li {
 	margin-top: 1.5em;
 	}
 
