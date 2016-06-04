@@ -370,6 +370,11 @@ html[lang|=ca] #menu:after { content: 'selecciona un altre idioma'; }*/
 	max-width: 30em;
 	}
 
+/* específico de home */
+
+#intro > img:nth-child(1) { display: inherit; }
+#intro > img:nth-child(2) { display: none; }
+
 #colaboration > div {
 	margin-bottom: 4em;
 	}
@@ -780,9 +785,10 @@ html[lang|=ca] #menu:after { content: 'selecciona un altre idioma'; }*/
 
 
 
+/* específico de home */
 
-
-
+#intro > img:nth-child(1) { display: none; }
+#intro > img:nth-child(2) { display: inherit; }
 
 
 
